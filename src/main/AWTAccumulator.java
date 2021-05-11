@@ -12,7 +12,7 @@ public class AWTAccumulator extends Frame {
 	public AWTAccumulator() {
 		setLayout(new GridLayout(2,2));
 		
-		add(new Label("Enter an Integer: "));
+		add(new Label("Enter an Integer : "));
 		
 		tfInput = new TextField (10);
 		add(tfInput);
@@ -38,7 +38,7 @@ public class AWTAccumulator extends Frame {
 	private class TFInputListener implements ActionListener{
 		
 		public void actionPerformed(ActionEvent evt) {
-		int numberIn  = Integer.parseInt(tfInput.getText());
+		int numberIn = Integer.parseInt(tfInput.getText());
 		sum += numberIn;
 		tfInput.setText("");
 		tfOutput.setText(sum + "");
